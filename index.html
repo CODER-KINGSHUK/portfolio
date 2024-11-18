@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=devife-width,initial-scale=1.0">
+            <title>My portfolio</title>
+            <link rel="stylesheet" href="portstyle.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    </head>
+    <body>
+        <div class="hero-header">
+            <div class="wrapper">
+                <header>
+                    <div class="logo">
+                        <i class="fa-solid fa-k"></i>
+                        <div class="logo-text">CODER-KINGSHUK</Coder-Kingshuk></div>
+                    </div>
+                    <nav>
+                        <div class="togglebtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="navlinks">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Projects</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="container">
+                    <div class="hero-pic">
+                        <img src="pic.jpg" alt="profile pic">
+                    </div>
+                    <div class="hero-text">
+                        <h4>Hi I'm <span class="input">Student</span></h4>
+                        <h2>Kingshuk Paul Chowdhury</h2>
+                        <p>Currently I'm Studying at St. Francis Xavier School at Kolkata.
+                            I have a basic knowledge of HTML and at present I'm learning Java.
+                              
+                        </p>
+                        <div class="btn-group">
+                             <a  href = "tel:+91-9883125072" class="btn active">Contact</a>
+                        </div>
+
+                        <div class="social">
+                            <a href="https://www.facebook.com/kingshuk.paulchowdhury.1"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/CODER-KINGSHUK"><i class="fa-brands fa-github"></i></a>
+                            <a href = "mailto:kingshukpaulchowdhury@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+        <script>
+            var togglebtn=document.querySelector(".togglebtn");
+            var nav=document.querySelector(".navlinks");
+            var links=document.querySelector(".navlinks li"); 
+
+            togglebtn.addEventListener("click",function(){
+                this.classList.toggle("click");
+                nav.classList.toggle("open");
+            })
+            var typed=new Typed(".input",{
+                 strings : ["Student","Creator","Developer","Learner"],
+                 typedSpeed : 50,
+                 backSpeed : 35,
+                 loop : true
+            })
+        </script>
+    </body>
+</html>
